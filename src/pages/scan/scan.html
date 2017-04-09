@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Barcode Scan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="Scan">
+  <div class="row">
+    <div>
+      <br>
+      <br>
+      <h5>Scan your barcode</h5>
+    </div>
+    <br>
+     <div class="col">
+      <h3>{{eventTitle}}</h3>
+    </div>
+  </div>
+  <button ion-button block color="secondary" class="Scan-button" (click)="scanQR()" [disabled]="loading">{{buttonText}}</button>
+</ion-content>

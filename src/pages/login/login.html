@@ -1,0 +1,22 @@
+<ion-content padding>
+  <p>Please Enter Server File Path and Sign In</p>
+ <form (ngSubmit)="login()" [formGroup]="loginFormControl">
+    <ion-list inset>
+      <ion-item>
+        <ion-label>Server Path :</ion-label>
+        <ion-input type="serverPath" formControlName="serverPath"></ion-input>
+      </ion-item>
+         <ion-item>
+        <ion-label>Email :</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password :</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <br>
+      <br>
+      <button type="submit" ion-button color="primary" block>Login</button>
+    </ion-list>
+  </form>
+</ion-content>
